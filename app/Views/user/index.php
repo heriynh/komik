@@ -16,7 +16,6 @@
         <p class="card-text"><?= user()->fullname; ?></p>
         <?php endif; ?>
         <p class="card-text"><?= user()->email; ?></p>        
-    	<p><a href="<?= base_url('admin'); ?>"> &laquo; Back</a></p>
       </div>
     </div>
   </div>

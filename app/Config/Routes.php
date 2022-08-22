@@ -40,7 +40,11 @@ $routes->get('/user', 'User::index');
 $routes->get('/admin', 'Admin::index',['filter' => 'role:admin']);
 $routes->get('/admin/index', 'Admin::index',['filter' => 'role:admin']);
 $routes->get('/admin/(:num)', 'Admin::detail/$1',['filter' => 'role:admin']);
-
+$routes->get('/home', 'Pages::home');
+$routes->get('/about', 'Pages::about');
+$routes->get('/contact', 'Pages::contact');
+$routes->get('/komik', 'Komik::komik');
+$routes->get('/komik/detail', 'Komik::komik');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -40,6 +40,36 @@
                     <span>MY PROFILE</span></a>
             </li>
             <!-- end my profile -->
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- home -->
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('home'); ?>">
+                    <i class="fas fa-user"></i>
+                    <span>HOME</span></a>
+            </li>
+            <!-- end home-->
+            <!-- komik -->
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('komik'); ?>">
+                    <i class="fas fa-user"></i>
+                    <span>KOMIK</span></a>
+            </li>
+            <!-- end komik-->
+            <!-- about-->
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('about'); ?>">
+                    <i class="fas fa-user"></i>
+                    <span>ABOUT</span></a>
+            </li>
+            <!-- end about->
+            <!-- contact-->
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('contact'); ?>">
+                    <i class="fas fa-user"></i>
+                    <span>CONTACT</span></a>
+            </li>
+            <!-- end contact -->
             	
 			<!-- Divider -->
             <hr class="sidebar-divider my-0">
