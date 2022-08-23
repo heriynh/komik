@@ -18,5 +18,12 @@ class KomikModel extends Model
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
+	public function getKomik($slug = false)
+	{
+		if($slug == false) {
+				return $this->findAll();
+			}
+			return $this->where(['slug' => $slug])->first();
+	}
 
 }

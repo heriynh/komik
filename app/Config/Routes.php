@@ -44,7 +44,7 @@ $routes->get('/home', 'Pages::home');
 $routes->get('/about', 'Pages::about');
 $routes->get('/contact', 'Pages::contact');
 $routes->get('/komik', 'Komik::komik');
-$routes->get('/komik/detail', 'Komik::komik');
+$routes->get('/komik/detail/(:any)', 'Komik::detail/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

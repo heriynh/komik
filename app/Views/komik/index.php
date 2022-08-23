@@ -12,14 +12,16 @@
     </tr>
   </thead>
   <tbody>
+  	<?php foreach($komik as $k) : ?>
     <tr>
       <th scope="row">1</th>
-      <td><img src="img/Naruto.jpg" class="sampul" alt=""></td>
-      <td>Naruto</td>
+      <td><img src="img/<?= $k['sampul']; ?>" class="sampul" alt=""></td>
+      <td><?= $k['judul']; ?></td>
       <td>
-			<a href="<?= base_url('komik/detail'); ?>" class="btn btn-info" > Detail </a>
+			<a href="<?= base_url('komik/detail/'.  $k['slug']); ?>" class="btn btn-info" > Detail </a>
 	</td>
     </tr>
+    <?php endforeach; ?>
  </tbody>
 </table>
 </div>
