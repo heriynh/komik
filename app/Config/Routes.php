@@ -43,8 +43,11 @@ $routes->get('/admin/(:num)', 'Admin::detail/$1',['filter' => 'role:admin']);
 $routes->get('/home', 'Pages::home');
 $routes->get('/about', 'Pages::about');
 $routes->get('/contact', 'Pages::contact');
-$routes->get('/komik', 'Komik::komik');
+$routes->get('/komik', 'Komik::index');
+$routes->get('/komik/delete/(:num)', 'Komik::deleted/$1');
 $routes->get('/komik/detail/(:any)', 'Komik::detail/$1');
+$routes->get('/komik/create', 'Komik::create');
+$routes->post('/komik/save', 'Komik::save');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
